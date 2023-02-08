@@ -15,7 +15,7 @@ const resolversArray = loadFilesSync('**/*', {
 const schema = makeExecutableSchema({
   typeDefs: [typesArray],
   resolvers: resolversArray,
-  
+
 });
 const app = express();
 app.use(
@@ -26,4 +26,3 @@ app.use(
 app.listen(3000, () => {
   console.log("running grahpql server on port 3000");
 });
- 
