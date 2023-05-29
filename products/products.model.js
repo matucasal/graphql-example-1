@@ -26,6 +26,7 @@ function getProductById(id) {
 }
 
 function addNewProduct(id, description, price) {
+	console.log('test git');
 	const newProduct = {
 		id,
 		description,
